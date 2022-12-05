@@ -18,6 +18,9 @@
       }
     ]
   },
+  "repository": {
+    "url": "https://github.com/tanishqkancharla/rsms-vscode-theme"
+  },
   "devDependencies": {
     "color2k": "^2.0.0",
     "teg-parser": "^0.12.2",
