@@ -1,0 +1,319 @@
+{
+  "name": "RSMS VSCode Theme Dark",
+  "colors": {
+    "foreground": "#ffffffcc",
+    "editor.background": "#1a1a19",
+    "editorCursor.foreground": "#f76ec9",
+
+    // Selection
+    "editor.selectionBackground": "#66c2ff4c",
+    "editor.inactiveSelectionBackground": "#b3b3b333",
+
+    // Diff editor
+    "diffEditor.insertedLineBackground": "#00db6e",
+    "diffEditor.removedLineBackground": "#ff150099",
+
+    // Guides
+    "editorIndentGuide.background": "#ffffff0f",
+    "editorIndentGuide.activeBackground": "#ffffff0f",
+
+    // Decorations
+    "editor.findMatchHighlightBackground": "#66c2ff66",
+    "editor.findMatchBackground": "#ffff00",
+    "editorWarning.foreground": "#ff5b4d",
+
+    // "editorBracketMatch.background": "#7c7c7c74",
+    "editorBracketMatch.border": "#f76ec9",
+    "scrollbar.shadow": "#f76ec977",
+
+    "activityBarBadge.background": "#007acc"
+  },
+  "tokenColors": [
+    {
+      // Comments
+      "scope": "comment",
+      "settings": { "foreground": "#ffffff60" } // "foreground_adjust": "alpha(0.3)"
+    },
+
+    {
+      // meta keyword (may appear in comments)
+      "scope": "meta.keyword",
+      "settings": { "foreground": "#85ad99" }
+    },
+    {
+      // meta variable (may appear in comments)
+      "scope": "meta.variable",
+      "settings": { "foreground": "#6c9380" }
+    },
+    {
+      // meta variable (may appear in comments)
+      "scope": "meta.annotation",
+      "settings": { "foreground": "#6c9380" }
+    },
+
+    {
+      // Punctuation
+      // separator  e.g. "," and ":" in `{ foo: bar, baz: cat }`
+      // terminator e.g. ";" in `x = y;`
+      // accessor   e.g. "->" and "." in `foo->bar.baz`
+      // section    e.g. "(" and ")" in `foo((baz)bar)`
+      // section    e.g. "[" and "]" in `foo[bar]`
+      // section    e.g. "{" and "}" in `if { ... }`
+      //
+      // keyword.operator.type.annotation is for TypeScript
+      //   e.g. ":" in
+      //   interface Foo {
+      //     name :string
+      //   }
+      //
+      // meta.interface keyword.operator.optional is for TypeScript
+      //   e.g. "?" in
+      //   interface Foo {
+      //     name? :string
+      //   }
+      //
+      "scope": "punctuation.separator, punctuation.terminator, meta.brace, punctuation.accessor, punctuation.section, keyword.operator.type.annotation, meta.interface keyword.operator.optional, meta.field.declaration keyword.operator.optional, punctuation.definition.block, punctuation.definition",
+      "settings": { "foreground": "#ffffff66" }
+    },
+
+    // Type
+    {
+      // Type definition
+      // e.g. "Foo" in `typedef struct x Foo` (C)
+      "scope": "entity.name.type.alias, entity.name.class",
+      "settings": {
+        "foreground": "#f7ac6e"
+      }
+    },
+    {
+      // Type reference
+      // e.g. "Foo" in `function hello(f :Foo)` (TS)
+      "scope": "support.type, source.go storage.type, entity.other.inherited-class",
+      "settings": { "foreground": "#ffab66" } // void getThing(const Foo* p)
+      // const meta.function.parameters meta.group storage.modifier
+      // Foo   meta.function.parameters meta.group
+      // p     meta.function.parameters meta.group variable.parameter
+    },
+
+    // Keyword
+    {
+      // Keyword
+      // e.g. "if" and "else" in "if this else that"
+      // storage.type.type      e.g. "type" in "type foo = int"
+      // storage.type.interface e.g. "interface" in "interface Foo {}"
+      // storage.type.class     e.g. "class" in "class Foo {}"
+      // keyword.operator.new   e.g. "new" in "new Error()"
+      "scope": "keyword, storage, storage.type.keyword, keyword.operator.new, keyword.operator.delete",
+      "settings": { "foreground": "#94b3d1" }
+    },
+    {
+      "scope": "keyword.operator",
+      // "foreground": "var(fgBase)"
+      "settings": { "foreground": "#ffc799" }
+    },
+
+    // Function
+    {
+      // Function definitions
+      "scope": "meta.definition.method, meta.definition.function",
+      "settings": {
+        "foreground": "#ffffff",
+        "fontStyle": "bold"
+      }
+    },
+    // Data
+    {
+      // e.g. "foo" and 42
+      // Note: JS inside HTML uses punctuation.definition...
+      "scope": "string, constant, string punctuation.definition, constant punctuation.definition",
+      "settings": { "foreground": "#94d1b3" }
+    },
+    {
+      // e.g. "%d" in `"age: %d"`
+      "scope": "string constant",
+      "settings": { "foreground": "#ccffe6" }
+    },
+    {
+      // e.g. "name" in `"user: ${name}"`
+      "scope": "string variable",
+      "settings": { "foreground": "#ffffffcc" }
+    },
+    {
+      // regexp
+      "scope": "string.regexp",
+      "settings": {
+        // Bg colors not supported
+        "foreground": "#3399ff"
+      }
+    },
+    // {
+    //   "scope": "constant.language",
+    //   "foreground": [
+    //     "color(var(yellow) blend(#0f0 70%) lightness(70%))",  // nil, true
+    //     "color(var(yellow) blend(#f00 70%) lightness(70%))",  // undefined
+    //     "color(var(yellow) blend(#f00 70%) lightness(70%))",    // false, null
+    //     "color(var(yellow) blend(#00f 70%) lightness(70%))"
+    //   ],
+    //   // Uses "Hashed Syntax Highlighting"
+    //   // https://www.sublimetext.com/docs/3/color_schemes.html#hashed_syntax_highlighting
+    // },
+
+    // XML, HTML etc with tags
+    {
+      "scope": "meta.tag",
+      "settings": { "foreground": "#ffffff66" }
+    },
+    {
+      // things inside tag
+      "scope": "meta.tag entity, meta.tag.attributes",
+      "settings": { "foreground": "#ffffffcc" }
+    },
+    {
+      // e.g. "a" in `<a href="hello"></a>`
+      "scope": "meta.tag entity.name",
+      "settings": { "foreground": "#ffab66" }
+    },
+
+    // Assembly
+    {
+      "scope": "storage.register, storage.other.register, constant.language.registers, entity.name.function.reg, constant.language.register",
+      "settings": { "foreground": "#ffab66" }
+    },
+    {
+      "scope": "source.asm entity.directive, source.asm support.function.directive",
+      "settings": { "foreground": "#ff9" }
+    },
+
+    // Structured text
+    {
+      "scope": "text punctuation",
+      "settings": { "foreground": "#ffffff66" }
+    },
+    {
+      "scope": "text markup.heading",
+      "settings": {
+        "foreground": "#ffffff",
+        "fontStyle": "bold"
+      }
+    },
+    { "scope": "text markup.italic", "settings": { "fontStyle": "italic" } },
+    { "scope": "text markup.bold", "settings": { "fontStyle": "bold" } },
+    {
+      "scope": "text markup.bold & markup.italic",
+      "settings": { "fontStyle": "bold italic" }
+    },
+    {
+      "scope": "text markup.strikethrough",
+      "settings": { "foreground": "#ffffff66" }
+    },
+    {
+      // List bullets
+      // "-" in "- hello\n- world"
+      "scope": "text markup.list punctuation.definition.list_item",
+      "settings": {
+        "foreground": "#ff9",
+        "fontStyle": "bold"
+      }
+    },
+    // { // List item
+    //   "scope": "text markup.list meta.paragraph.list",
+    //   "foreground": "color(var(yellow) lightness(92%))",
+    // },
+    {
+      // table header text
+      "scope": "text.html.markdown meta.table.header",
+      "settings": { "foreground": "#94d1b3" }
+    },
+    {
+      // table lines
+      "scope": "text.html.markdown punctuation.separator.table-cell, text.html.markdown meta.table.header-separator punctuation.section.table-header",
+      "settings": { "foreground": "#94d1b3" }
+    },
+    // link, e.g. [Title](url)
+    { "scope": "text meta.link", "settings": { "foreground": "#ffffff" } },
+    {
+      "scope": "text meta.link markup.underline.link",
+      "settings": { "foreground": "#ffffff66" }
+    },
+    // image, e.g. ![alt](url)
+    {
+      "scope": "text meta.image",
+      "settings": { "foreground": "#ffffff66" }
+    },
+    {
+      "scope": "text meta.image markup.underline.link",
+      "settings": { "foreground": "#ffffff" }
+    },
+    {
+      // code, e.g. `...` and ```...```
+      "scope": "text markup.raw, text meta.code-fence.definition, text markup.raw.code-fence",
+      "settings": { "background": "color(var(fg) alpha(0.07))" }
+    },
+    {
+      "scope": "text meta.code-fence.definition constant",
+      "settings": { "foreground": "#ffffff66" }
+    },
+
+    // -------------------------------------------------------------------------------------------
+    // diff
+    {
+      "scope": "source.diff",
+      "settings": { "foreground": "#ffffff80" } // "font_style": "italic underline"
+    },
+    {
+      // all meta, including e.g. "@@ -26,6 +26,7 @@"
+      "scope": "meta.diff",
+      "settings": {
+        "foreground": "#70c2c2",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      // header
+      "scope": "meta.diff.header",
+      "settings": { "foreground": "#75f0b3", "fontStyle": "italic" }
+    },
+    {
+      // header prev files e.g. "--- a.c"
+      "scope": "meta.diff.header.from-file",
+      "settings": {
+        "foreground": "#f7796e"
+      }
+    },
+    {
+      // header next file e.g. "+++ a.c"
+      "scope": "meta.diff.header.to-file",
+      "settings": {
+        "foreground": "#3df599"
+      }
+    },
+
+    {
+      // removed line
+      "scope": "markup.deleted",
+      "settings": {
+        "foreground": "#e48981"
+        // "fontStyle": "strikethrough",
+        // "background": "color(var(bg) lightness(9%))"
+      }
+    },
+    {
+      // added line
+      "scope": "markup.inserted",
+      "settings": {
+        "foreground": "#9efacc"
+      } // "background": "color(var(green) saturation(10%) lightness(13%))",
+    },
+
+    // -------------------------------------------------------------------------------------------
+    // misc
+    {
+      "scope": "invalid.deprecated",
+      "settings": { "foreground": "#ff1500", "fontStyle": "italic underline" }
+    },
+    {
+      "scope": "invalid.illegal",
+      "settings": { "foreground": "#ff1500", "fontStyle": "strikethrough" }
+    }
+  ]
+}

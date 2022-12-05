@@ -1,0 +1,28 @@
+{
+  "colors": {
+    "red": "#ff1500",
+    "green": "#00db6e",
+    "blue": "#0080ff",
+    "orange": "#ff7300",
+    "yellow": "#ffff00",
+    "cyan": "#00ffff",
+    "fg": "#ffffff",
+    "bg": "#1a1a19"
+  },
+  "derived": {
+    "unimportant": "#ffffff66",
+    "cursor": "#f76ec9",
+    "accent": "#f76ec9",
+    "selection": "#66c2ff",
+    "type": "#ff7300",
+    "keyword": "#0080ff",
+    "data": "#00db6e",
+    "meta": "#6c9380",
+    "metaKeyword": "#85ad99",
+    "header": "#75f0b3",
+    "fgBase": "#ffffffcc",
+    "typeRef": "#ffab66",
+    "keywordBase": "#94b3d1",
+    "dataBase": "#94d1b3"
+  }
+}
