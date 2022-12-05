@@ -1,14 +1,15 @@
 {
   "name": "rsms-vscode-theme",
-  "displayName": "rsms-vscode-theme",
+  "displayName": "Rsms VSCode theme",
   "description": "Rasmus Andersson's sublime theme, ported over to VSCode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.73.0"
   },
   "categories": [
     "Themes"
   ],
+  "publisher": "TanishqKancharla",
   "contributes": {
     "themes": [
       {
