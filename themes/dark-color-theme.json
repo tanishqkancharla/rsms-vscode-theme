@@ -10,8 +10,8 @@
     "editor.inactiveSelectionBackground": "#b3b3b333",
 
     // Diff editor
-    "diffEditor.insertedLineBackground": "#00db6e",
-    "diffEditor.removedLineBackground": "#ff150099",
+    "diffEditor.insertedLineBackground": "#00db6e80",
+    "diffEditor.removedLineBackground": "#ff150080",
 
     // Guides
     "editorIndentGuide.background": "#ffffff0f",
